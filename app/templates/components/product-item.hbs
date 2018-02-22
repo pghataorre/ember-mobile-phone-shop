@@ -1,0 +1,13 @@
+<div class="product-item">
+    {{log 'SINGLE OBJ' prod }}
+    {{log 'SINGLE prod desc' prod.desc }}
+    <h3>{{text-format prod.prodTitle}}</h3>
+    <p><img src="{{prod.prodImage}}"/></p>
+    <h4>Description</h4>
+    <p>{{prod.desc}}</p>
+    <h3>Price</h3>
+    <p>{{currency-format prod.price}}</p>
+    <button id="addToCart" {{ action 'addToCart' prod}}>Add Product</button>
+</div>
+
+{{yield}}
