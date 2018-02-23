@@ -1,8 +1,9 @@
-{{mobile-phone-shop products=model}}
-    <div class="prod-list-container">
-        <h2>OUR MOBILE PHONES</h2>
-        {{#each products as |prod|}}
-            {{product-item prod=prod}}
-        {{/each}}
-    </div>
+<div class="prod-list-container">
+    <h2>OUR MOBILE PHONES</h2>
+    {{prod-list basket=model}}
+</div>
+<div class="basket-list-container">
+    <h2>PRODUCT BASKET</h2>
+    {{products-basket basket=model}}
+</div>
 {{outlet}}
